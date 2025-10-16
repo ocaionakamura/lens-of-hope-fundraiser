@@ -1,5 +1,6 @@
 import { Heart, Target, DollarSign, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import QRCode from "react-qr-code";
 
 const Index = () => {
   return (
@@ -67,13 +68,18 @@ const Index = () => {
             <h3 className="text-lg font-bold text-foreground mb-2">
               Como Contribuir
             </h3>
-            <p className="text-sm text-muted-foreground mb-3">
+            <p className="text-sm text-muted-foreground mb-4">
               Qualquer valor é bem-vindo!
             </p>
-            <p className="text-base font-medium text-foreground">
+            <p className="text-base font-medium text-foreground mb-3">
               💳 Contribua por Pix
             </p>
-            <p className="text-lg font-bold text-primary mt-2">
+            <div className="flex justify-center mb-3">
+              <div className="bg-white p-3 rounded-lg shadow-md">
+                <QRCode value="11999999999" size={120} />
+              </div>
+            </div>
+            <p className="text-lg font-bold text-primary">
               (11) 99999-9999
             </p>
             <p className="text-sm text-muted-foreground mt-3">
