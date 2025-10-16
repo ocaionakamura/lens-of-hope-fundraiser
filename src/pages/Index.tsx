@@ -1,22 +1,7 @@
-import { Heart, Target, DollarSign, Calendar, Share2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Heart, Target, DollarSign, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { toast } from "sonner";
 
 const Index = () => {
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: "Vaquinha Solidária - Lente para Ceratocone",
-        text: "Ajude o Robson a custear lentes especiais para ceratocone!",
-        url: window.location.href,
-      });
-    } else {
-      navigator.clipboard.writeText(window.location.href);
-      toast.success("Link copiado para a área de transferência!");
-    }
-  };
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-background via-muted/20 to-background">
       {/* Header com coração */}
@@ -108,18 +93,10 @@ const Index = () => {
 
         {/* Call to action */}
         <Card className="p-6 md:p-8 text-center bg-gradient-to-br from-primary via-accent to-primary shadow-xl border-2 border-primary/30">
-          <p className="text-base md:text-lg text-primary-foreground/95 mb-6 leading-relaxed">
+          <p className="text-base md:text-lg text-primary-foreground/95 leading-relaxed">
             Toda ajuda é muito bem-vinda — seja com uma doação ou compartilhando
             esta causa com amigos e familiares.
           </p>
-          <Button
-            onClick={handleShare}
-            size="lg"
-            className="bg-card text-primary hover:bg-card/90 shadow-lg font-semibold text-base md:text-lg px-8 py-6 rounded-full"
-          >
-            <Share2 className="w-5 h-5 mr-2" />
-            Compartilhar Campanha
-          </Button>
         </Card>
 
         {/* Agradecimento */}
