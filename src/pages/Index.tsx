@@ -73,7 +73,10 @@ const Index = () => {
             <p className="text-base font-medium text-foreground">
               💳 Contribua por Pix
             </p>
-            <p className="text-sm text-muted-foreground mt-2">
+            <p className="text-lg font-bold text-primary mt-2">
+              (11) 99999-9999
+            </p>
+            <p className="text-sm text-muted-foreground mt-3">
               ✍️ Preencha a lista para registrar
             </p>
           </Card>
