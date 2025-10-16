@@ -48,7 +48,7 @@ const Index = () => {
         </Card>
 
         {/* Cards informativos */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           {/* Meta */}
           <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-card to-muted/30 border-2 border-primary/20">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-4">
@@ -57,33 +57,6 @@ const Index = () => {
             <h3 className="text-lg font-bold text-foreground mb-2">Meta</h3>
             <p className="text-3xl md:text-4xl font-bold text-primary">
               R$ 3.000
-            </p>
-          </Card>
-
-          {/* Como contribuir */}
-          <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-card to-muted/30 border-2 border-accent/20">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 mb-4">
-              <DollarSign className="w-7 h-7 text-accent" />
-            </div>
-            <h3 className="text-lg font-bold text-foreground mb-2">
-              Como Contribuir
-            </h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              Qualquer valor é bem-vindo!
-            </p>
-            <p className="text-base font-medium text-foreground mb-3">
-              💳 Contribua por Pix
-            </p>
-            <div className="flex justify-center mb-3">
-              <div className="bg-white p-3 rounded-lg shadow-md">
-                <QRCode value="11999999999" size={120} />
-              </div>
-            </div>
-            <p className="text-lg font-bold text-primary">
-              (11) 99999-9999
-            </p>
-            <p className="text-sm text-muted-foreground mt-3">
-              ✍️ Preencha a lista para registrar
             </p>
           </Card>
 
@@ -99,6 +72,33 @@ const Index = () => {
             <p className="text-base text-muted-foreground">de 2025</p>
           </Card>
         </div>
+
+        {/* Como contribuir */}
+        <Card className="p-6 md:p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-card to-muted/30 border-2 border-accent/20 mb-8">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 mb-4">
+            <DollarSign className="w-7 h-7 text-accent" />
+          </div>
+          <h3 className="text-xl font-bold text-foreground mb-2">
+            Como Contribuir
+          </h3>
+          <p className="text-sm text-muted-foreground mb-4">
+            Qualquer valor é bem-vindo!
+          </p>
+          <p className="text-base font-medium text-foreground mb-3">
+            💳 Contribua por Pix
+          </p>
+          <div className="flex justify-center mb-3">
+            <div className="bg-white p-3 rounded-lg shadow-md">
+              <QRCode value="11999999999" size={120} />
+            </div>
+          </div>
+          <p className="text-lg font-bold text-primary">
+            (11) 99999-9999
+          </p>
+          <p className="text-sm text-muted-foreground mt-3">
+            ✍️ Preencha a lista para registrar
+          </p>
+        </Card>
 
         {/* Call to action */}
         <Card className="p-6 md:p-8 text-center bg-gradient-to-br from-primary via-accent to-primary shadow-xl border-2 border-primary/30">
